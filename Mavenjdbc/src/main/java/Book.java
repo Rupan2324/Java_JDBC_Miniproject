@@ -3,7 +3,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Book {
@@ -29,7 +28,7 @@ public class Book {
 			System.out.println("*****Please enter User details*****");
 			try {
 				String m = "";
-				Date d = new Date();
+		
 			 Connection con = getconn();
 			 String s1 = "insert into services(name,address,Type_of_service,booking_date,phone_no) values(?,?,?,?,?)";
 			 PreparedStatement stmt = con.prepareStatement(s1);
